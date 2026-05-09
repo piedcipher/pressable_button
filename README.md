@@ -2,7 +2,7 @@
 
 A customizable 3D animated pressable button for Flutter with smooth depth and glow effects.
 
-<video src='https://github.com/piedcipher/pressable_button/blob/main/demos/demo.mp4'></video>
+https://github.com/user-attachments/assets/5f45d0a8-e6f7-426f-a955-b49aa6578c62
 
 ## Features
 
