@@ -1,39 +1,143 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# pressable_button
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A customizable 3D animated pressable button for Flutter with smooth depth and glow effects.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<video src='https://github.com/piedcipher/pressable_button/blob/main/demos/demo.mp4'></video>
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- smooth press animation
+- customizable width and height
+- configurable press depth
+- rounded corners
+- glow and shadow effects
+- lightweight and dependency-free
+- supports any child widget
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Preview
+
+```dart
+PressableButton(
+  onPressed: () {},
+  child: const Text('Click Me'),
+)
+```
+
+---
+
+## Installation
+
+Add the package to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  pressable_button: ^0.0.1
+```
+
+Run:
+
+```bash
+flutter pub get
+```
+
+---
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:pressable_button/pressable_button.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color(0xFF101010),
+        body: Center(
+          child: PressableButton(
+            onPressed: () {
+              debugPrint('pressed');
+            },
+            child: const Text(
+              'Click Me',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Customization
+
+```dart
+PressableButton(
+  width: 220,
+  height: 80,
+  borderRadius: 24,
+  pressDepth: 20,
+  color: Colors.green,
+  shadowColor: Colors.green.shade900,
+  onPressed: () {},
+  child: const Text('Press'),
+)
+```
+
+---
+
+## Parameters
+
+| Parameter | Type | Default |
+|---|---|---|
+| `onPressed` | `VoidCallback` | required |
+| `child` | `Widget` | required |
+| `width` | `double` | `200` |
+| `height` | `double` | `80` |
+| `color` | `Color` | `Colors.green` |
+| `shadowColor` | `Color?` | `null` |
+| `borderRadius` | `double` | `25` |
+| `pressDepth` | `double` | `32` |
+| `animationDuration` | `Duration` | `100ms` |
+
+---
+
+## Example App
+
+See the full example inside the `/example` folder.
+
+Run locally:
+
+```bash
+cd example
+flutter run
+```
+
+---
+
+## Repository
+
+- github: https://github.com/piedcipher/pressable_button
+- website: https://tirth.today
+
+---
+
+## License
+
+MIT

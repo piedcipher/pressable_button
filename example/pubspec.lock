@@ -134,9 +134,10 @@ packages:
   pressable_button:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: pressable_button
+      sha256: "920e495a14e26ea8f36399a12ec91b8dbd35bdeb0d8d9d34454547b55d9af3e3"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.0.1"
   sky_engine:
     dependency: transitive
