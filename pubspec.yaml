@@ -1,6 +1,6 @@
 name: pressable_button
 description: "A customizable 3D animated pressable button for Flutter with smooth depth and glow effects."
-version: 0.0.3
+version: 0.0.4
 homepage: https://tirth.today
 repository: https://github.com/piedcipher/pressable_button
 issue_tracker: https://github.com/piedcipher/pressable_button/issues

@@ -43,7 +43,7 @@ Add `pressable_button` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pressable_button: ^0.0.3
+  pressable_button: ^0.0.4
 ```
 
 Then run:

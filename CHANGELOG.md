@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Fix Pub Score.
+
 ## 0.0.3
 
 * Fix Pub Score.
