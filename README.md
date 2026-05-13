@@ -6,7 +6,7 @@
 
 A customizable 3D animated pressable button for Flutter with smooth depth and glow effects.
 
-![Demo](https://github.com/user-attachments/assets/5f45d0a8-e6f7-426f-a955-b49aa6578c62)
+<video src='https://github.com/user-attachments/assets/5f45d0a8-e6f7-426f-a955-b49aa6578c62'></video>
 
 ## Features
 
